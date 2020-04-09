@@ -1,0 +1,3 @@
+/home/oreo/Documents/hellocmake/build/CMakeFiles/rebuild_cache.dir
+/home/oreo/Documents/hellocmake/build/CMakeFiles/edit_cache.dir
+/home/oreo/Documents/hellocmake/build/CMakeFiles/main.dir
