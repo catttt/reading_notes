@@ -1,7 +1,7 @@
 [
 {
   "directory": "/home/oreo/Documents/reading_notes/数据结构笔记_浙江大学/code/chapter3/build",
-  "command": "/usr/bin/g++-5     -g   -o CMakeFiles/main.dir/main.cpp.o -c /home/oreo/Documents/reading_notes/数据结构笔记_浙江大学/code/chapter3/main.cpp",
+  "command": "/usr/bin/g++-5    -I/home/oreo/Documents/reading_notes/数据结构笔记_浙江大学/code/chapter3  -g   -o CMakeFiles/main.dir/main.cpp.o -c /home/oreo/Documents/reading_notes/数据结构笔记_浙江大学/code/chapter3/main.cpp",
   "file": "/home/oreo/Documents/reading_notes/数据结构笔记_浙江大学/code/chapter3/main.cpp"
 }
 ]

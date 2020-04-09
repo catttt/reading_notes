@@ -6,5 +6,5 @@ CXX_FLAGS = -g
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/home/oreo/Documents/reading_notes/数据结构笔记_浙江大学/code/chapter3 
 
