@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/oreo/Documents/hellocmake/build",
+  "command": "/usr/bin/g++-5     -g   -o CMakeFiles/main.dir/main.cpp.o -c /home/oreo/Documents/hellocmake/main.cpp",
+  "file": "/home/oreo/Documents/hellocmake/main.cpp"
+}
+]
