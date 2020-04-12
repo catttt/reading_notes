@@ -2,6 +2,7 @@
 #include"LinearList.h"
 #include "LinearListChain.h"
 #include "StackOrderStore.h"
+#include "StackOutOrder.h"
 
 using namespace std;
 
@@ -34,17 +35,27 @@ int main(void)
     int lcElem = lc->FindKth(2);
 
     //广义表
+
+    //顺序存储的堆栈
     StackOrderStore *sos = new StackOrderStore(10);
     bool ise = sos->IsEmpty();
     bool isf = sos->IsFull();
     sos->Push(1);
     sos->Push(2);
-    sos->Pop();
+    int r = sos->Pop();
     sos->Push(3);
-    sos->Pop();
-    sos->Pop();
-    sos->Pop();
-
+    r = sos->Pop();
+    r = sos->Pop();
+    r = sos->Pop();
+    //链式堆栈
+    StackOutOrder *soo = new StackOutOrder();
+    soo->Push(1);
+    soo->Push(2);
+    r = soo->Pop();
+    soo->Push(3);
+    r = soo->Pop();
+    r = soo->Pop();
+    r = soo->Pop();
 
     return 0;
 }
