@@ -1,7 +1,7 @@
 #include <iostream>
 #include"LinearList.h"
 #include "LinearListChain.h"
-
+#include "StackOrderStore.h"
 
 using namespace std;
 
@@ -32,5 +32,19 @@ int main(void)
     int lcLengh = lc->Length();
     CPosition lcFind = lc->Find(1);
     int lcElem = lc->FindKth(2);
+
+    //广义表
+    StackOrderStore *sos = new StackOrderStore(10);
+    bool ise = sos->IsEmpty();
+    bool isf = sos->IsFull();
+    sos->Push(1);
+    sos->Push(2);
+    sos->Pop();
+    sos->Push(3);
+    sos->Pop();
+    sos->Pop();
+    sos->Pop();
+
+
     return 0;
 }
