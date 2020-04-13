@@ -3,6 +3,7 @@
 #include "LinearListChain.h"
 #include "StackOrderStore.h"
 #include "StackOutOrder.h"
+#include "QueueOrder.h"
 
 using namespace std;
 
@@ -56,6 +57,19 @@ int main(void)
     r = soo->Pop();
     r = soo->Pop();
     r = soo->Pop();
+
+    //队列顺序存储
+    QueueOrder *q = new QueueOrder(4);
+    q->AddQ(1);
+    q->AddQ(2);
+    q->AddQ(3);
+    q->AddQ(4);
+    r = q->DeleteQ();
+    r = q->DeleteQ();
+    r = q->DeleteQ();
+    r = q->DeleteQ();
+    //队列链式存储
+
 
     return 0;
 }
