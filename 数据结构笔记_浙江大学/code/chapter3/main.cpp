@@ -4,6 +4,7 @@
 #include "StackOrderStore.h"
 #include "StackOutOrder.h"
 #include "QueueOrder.h"
+#include "QueueOutOrder.h"
 
 using namespace std;
 
@@ -69,7 +70,13 @@ int main(void)
     r = q->DeleteQ();
     r = q->DeleteQ();
     //队列链式存储
-
+    QueueOutOrder *qo = new QueueOutOrder();
+    qo->AddQ(1);
+    qo->AddQ(2);
+    r = qo->DeleteQ();
+    qo->AddQ(3);
+    r = qo->DeleteQ();
+    r = qo->DeleteQ();
 
     return 0;
 }
