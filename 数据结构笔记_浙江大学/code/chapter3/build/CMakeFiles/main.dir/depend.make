@@ -3,5 +3,9 @@
 
 CMakeFiles/main.dir/main.cpp.o: ../LinearList.h
 CMakeFiles/main.dir/main.cpp.o: ../LinearListChain.h
+CMakeFiles/main.dir/main.cpp.o: ../QueueOrder.h
+CMakeFiles/main.dir/main.cpp.o: ../QueueOutOrder.h
+CMakeFiles/main.dir/main.cpp.o: ../StackOrderStore.h
+CMakeFiles/main.dir/main.cpp.o: ../StackOutOrder.h
 CMakeFiles/main.dir/main.cpp.o: ../main.cpp
 

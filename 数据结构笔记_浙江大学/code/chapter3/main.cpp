@@ -1,7 +1,10 @@
 #include <iostream>
 #include"LinearList.h"
 #include "LinearListChain.h"
-
+#include "StackOrderStore.h"
+#include "StackOutOrder.h"
+#include "QueueOrder.h"
+#include "QueueOutOrder.h"
 
 using namespace std;
 
@@ -32,5 +35,48 @@ int main(void)
     int lcLengh = lc->Length();
     CPosition lcFind = lc->Find(1);
     int lcElem = lc->FindKth(2);
+
+    //广义表
+
+    //顺序存储的堆栈
+    StackOrderStore *sos = new StackOrderStore(10);
+    bool ise = sos->IsEmpty();
+    bool isf = sos->IsFull();
+    sos->Push(1);
+    sos->Push(2);
+    int r = sos->Pop();
+    sos->Push(3);
+    r = sos->Pop();
+    r = sos->Pop();
+    r = sos->Pop();
+    //链式堆栈
+    StackOutOrder *soo = new StackOutOrder();
+    soo->Push(1);
+    soo->Push(2);
+    r = soo->Pop();
+    soo->Push(3);
+    r = soo->Pop();
+    r = soo->Pop();
+    r = soo->Pop();
+
+    //队列顺序存储
+    QueueOrder *q = new QueueOrder(4);
+    q->AddQ(1);
+    q->AddQ(2);
+    q->AddQ(3);
+    q->AddQ(4);
+    r = q->DeleteQ();
+    r = q->DeleteQ();
+    r = q->DeleteQ();
+    r = q->DeleteQ();
+    //队列链式存储
+    QueueOutOrder *qo = new QueueOutOrder();
+    qo->AddQ(1);
+    qo->AddQ(2);
+    r = qo->DeleteQ();
+    qo->AddQ(3);
+    r = qo->DeleteQ();
+    r = qo->DeleteQ();
+
     return 0;
 }
